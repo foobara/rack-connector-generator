@@ -1,4 +1,4 @@
-require_relative "src/version"
+require_relative "version"
 
 Gem::Specification.new do |spec|
   spec.name = "foobara-rack-connector-generator"
@@ -15,10 +15,13 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/main/CHANGELOG.md"
 
+  spec.add_dependency "foobara"
+  spec.add_dependency "foobara-files-generator"
+
   spec.files = Dir[
-    "lib/**/*",
-    "src/**/*",
-    "LICENSE.txt"
+  "lib/**/*",
+  "src/**/*",
+  "LICENSE.txt"
   ]
 
   spec.require_paths = ["lib"]
