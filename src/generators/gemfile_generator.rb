@@ -1,5 +1,6 @@
 module Foobara
   module Generators
+    # TODO: do this in the .gemspec instead...
     module RackConnectorGenerator
       module Generators
         # Kind of tricky... for the first time we will be loading an existing file in the working directory
@@ -19,7 +20,9 @@ module Foobara
             match = contents.match(/^gem /)
 
             if match
-              new_entry = 'gem "foobara-rack-connector", github: "foobara/rack-connector"'
+              new_entry = 'gem "foobara-rack-connector", github: "foobara/rack-connector"\n'
+              new_entry += 'gem "rackup"'
+
               "#{match.pre_match}\n#{new_entry}\n#{match}#{match.post_match}"
             else
               # TODO: maybe print a warning and return the original Gemfile
