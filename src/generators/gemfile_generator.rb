@@ -20,8 +20,11 @@ module Foobara
             match = contents.match(/^gem /)
 
             if match
-              new_entry = 'gem "foobara-rack-connector", github: "foobara/rack-connector"\n'
-              new_entry += 'gem "rackup"'
+              new_entry = [
+                'gem "foobara-rack-connector", github: "foobara/rack-connector"',
+                'gem "rackup"',
+                'gem "rerun"'
+              ].join("\n")
 
               "#{match.pre_match}\n#{new_entry}\n#{match}#{match.post_match}"
             else

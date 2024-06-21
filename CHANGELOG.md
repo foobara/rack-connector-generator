@@ -1,3 +1,8 @@
+## [0.0.4] - 2024-06-20
+
+- Fix bug in generating Gemfile changes
+- Add rerun to Gemfile
+
 ## [0.0.2] - 2024-06-19
 
 - Include rackup in generated Gemfile
