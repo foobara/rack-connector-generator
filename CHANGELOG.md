@@ -1,3 +1,7 @@
+## [0.0.3] - 2024-06-20
+
+- Fix bug in generating Gemfile changes
+
 ## [0.0.2] - 2024-06-19
 
 - Include rackup in generated Gemfile
