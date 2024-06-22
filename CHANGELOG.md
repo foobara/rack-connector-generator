@@ -1,3 +1,7 @@
+## [0.0.5] - 2024-06-21
+
+- Include hidden template files/directories in gem
+
 ## [0.0.4] - 2024-06-20
 
 - Fix bug in generating Gemfile changes
