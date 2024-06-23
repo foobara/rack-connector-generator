@@ -1,3 +1,7 @@
+## [0.0.6] - 2024-06-23
+
+- Add a .rerun to templates for convenience
+
 ## [0.0.5] - 2024-06-21
 
 - Include hidden template files/directories in gem

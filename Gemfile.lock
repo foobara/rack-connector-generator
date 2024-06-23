@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foobara-rack-connector-generator (0.0.5)
+    foobara-rack-connector-generator (0.0.6)
       foobara
       foobara-files-generator
 

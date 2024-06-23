@@ -1,0 +1,6 @@
+-p '**/*.{rb,erb,html,ru}'
+--ignore 'coverage/*'
+--ignore '.git/*'
+--ignore 'pkg/*'
+--ignore 'spec/*'
+--no-notify
