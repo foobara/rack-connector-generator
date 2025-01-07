@@ -1,5 +1,7 @@
+require_relative "version"
+
 source "https://rubygems.org"
-ruby File.read("#{__dir__}/.ruby-version")
+ruby TestOrg::TestDomain::MINIMUM_RUBY_VERSION
 
 gemspec
 
@@ -7,11 +9,6 @@ gem "rake"
 
 group :development do
   gem "foob"
-  gem "foobara-command-generator"
-  gem "foobara-domain-generator"
-  gem "foobara-empty-ruby-project-generator"
-  gem "foobara-files-generator"
-  gem "foobara-organization-generator"
   gem "foobara-rubocop-rules"
   gem "guard-rspec"
   gem "rubocop-rake"
@@ -24,7 +21,7 @@ group :development, :test do
 end
 
 group :test do
-  gem "foobara-spec-helpers", github: "foobara/spec-helpers"
+  gem "foobara-spec-helpers"
   gem "rspec"
   gem "rspec-its"
   gem "simplecov"
