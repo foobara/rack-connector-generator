@@ -1,3 +1,7 @@
+## [0.0.7] - 2025-01-07
+
+- Bump Ruby to 3.4.1
+
 ## [0.0.6] - 2024-06-23
 
 - Add a .rerun to templates for convenience
