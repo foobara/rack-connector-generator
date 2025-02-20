@@ -42,7 +42,7 @@ RSpec.describe Foobara::Generators::RackConnectorGenerator::WriteRackConnectorTo
 
       expect(
         command.paths_to_source_code["Gemfile"]
-      ).to include('gem "foobara-rack-connector", github: "foobara/rack-connector"')
+      ).to include('gem "foobara-rack-connector"')
     end
   end
 

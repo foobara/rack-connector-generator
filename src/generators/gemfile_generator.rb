@@ -21,7 +21,7 @@ module Foobara
 
             if match
               new_entry = [
-                'gem "foobara-rack-connector", github: "foobara/rack-connector"',
+                'gem "foobara-rack-connector"',
                 'gem "rackup"',
                 'gem "rerun"',
                 'gem "puma"'

@@ -1,3 +1,7 @@
+## [0.0.9] - 2025-02-19
+
+- Use rubygems instead of github in Gemfile
+
 ## [0.0.8] - 2025-02-19
 
 - Bump Ruby to 3.4.2
