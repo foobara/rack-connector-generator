@@ -1,3 +1,8 @@
+## [0.0.8] - 2025-02-19
+
+- Bump Ruby to 3.4.2
+- Add puma to generated Gemfile
+
 ## [0.0.7] - 2025-01-07
 
 - Bump Ruby to 3.4.1

@@ -23,7 +23,8 @@ module Foobara
               new_entry = [
                 'gem "foobara-rack-connector", github: "foobara/rack-connector"',
                 'gem "rackup"',
-                'gem "rerun"'
+                'gem "rerun"',
+                'gem "puma"'
               ].join("\n")
 
               "#{match.pre_match}\n#{new_entry}\n#{match}#{match.post_match}"
