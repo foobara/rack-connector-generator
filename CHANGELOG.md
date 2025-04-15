@@ -1,3 +1,7 @@
+## [0.0.11] - 2025-04-15
+
+- Make use of default serializers instead of setting them
+
 ## [0.0.10] - 2025-04-14
 
 - Add more cors-related headers to generated .env
