@@ -1,3 +1,7 @@
+## [0.0.10] - 2025-04-14
+
+- Add more cors-related headers to generated .env
+
 ## [0.0.9] - 2025-02-19
 
 - Use rubygems instead of github in Gemfile
