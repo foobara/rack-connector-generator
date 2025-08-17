@@ -69,11 +69,12 @@ module Foobara
           puts "linting..."
           cmd = "bundle exec rubocop --no-server -A"
 
-          Open3.popen3(cmd) do |stdin, _stdout, stderr, wait_thr|
+          # TODO: make use of run_cmd_and_return_output(cmd)
+          Open3.popen3(cmd) do |_stdin, stdout, stderr, wait_thr|
             exit_status = wait_thr.value
             unless exit_status.success?
               # :nocov:
-              warn "WARNING: could not #{cmd}.\n#{stdin.read}\n#{stderr.read}"
+              warn "WARNING: could not #{cmd}.\n#{stdout.read}\n#{stderr.read}"
               # :nocov:
             end
           end
