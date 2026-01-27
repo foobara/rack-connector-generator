@@ -1,3 +1,7 @@
+## [0.0.12] - 2026-01-27
+
+- Generate .env.development with the right default port (9292 instead of 3000)
+
 ## [0.0.11] - 2025-04-15
 
 - Make use of default serializers instead of setting them
