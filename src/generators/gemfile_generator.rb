@@ -30,9 +30,9 @@ module Foobara
               "#{match.pre_match}\n#{new_entry}\n#{match}#{match.post_match}"
             else
               # TODO: maybe print a warning and return the original Gemfile
-              # :nocov:
+              # simplecov:disable
               raise "Not sure how to inject rack_connector into the Gemfile"
-              # :nocov:
+              # simplecov:enable
             end
           end
         end
