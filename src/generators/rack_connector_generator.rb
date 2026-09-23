@@ -11,9 +11,9 @@ module Foobara
                   Generators::GemfileGenerator
                 ]
               else
-                # :nocov:
+                # simplecov:disable
                 raise "Not sure how build a generator for a #{manifest}"
-                # :nocov:
+                # simplecov:enable
               end
             end
           end
@@ -21,16 +21,16 @@ module Foobara
           alias rack_connector_config relevant_manifest
 
           def templates_dir
-            # :nocov:
+            # simplecov:disable
             "#{__dir__}/../../templates"
-            # :nocov:
+            # simplecov:enable
           end
 
           # TODO: promote this up to base project
           def ==(other)
-            # :nocov:
+            # simplecov:disable
             self.class == other.class && rack_connector_config == other.rack_connector_config
-            # :nocov:
+            # simplecov:enable
           end
 
           def hash
